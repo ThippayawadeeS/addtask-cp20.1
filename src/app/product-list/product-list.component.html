@@ -1,0 +1,13 @@
+<app-product-item
+*ngFor="let product of products; let i = index"
+[product]="product"
+(OnSelected) = "selectedProduct($event,i)"
+></app-product-item>
+<div class="box">
+    <b>Add Task</b>: 
+    <p>Name: <input [(ngModel)]="name" /> </p>
+    <p>Description: <input [(ngModel)]="description" /> </p>
+    <br>
+    <br>
+    <p> <button class="btn btn-primary" (click)="toAdd()">Add</button> </p>
+</div>

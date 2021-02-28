@@ -1,0 +1,7 @@
+.box {
+    width:400px;
+    display: list-item;
+    border:1px solid gray;
+    text-align: left;
+} 
+
